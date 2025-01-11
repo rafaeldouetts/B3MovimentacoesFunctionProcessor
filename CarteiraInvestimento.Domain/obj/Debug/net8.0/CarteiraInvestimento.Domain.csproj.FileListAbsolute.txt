@@ -1,0 +1,12 @@
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\bin\Debug\net8.0\CarteiraInvestimento.Domain.deps.json
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\bin\Debug\net8.0\CarteiraInvestimento.Domain.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\bin\Debug\net8.0\CarteiraInvestimento.Domain.pdb
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\CarteiraInvestimento.Domain.csproj.AssemblyReference.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\CarteiraInvestimento.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\CarteiraInvestimento.Domain.AssemblyInfoInputs.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\CarteiraInvestimento.Domain.AssemblyInfo.cs
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\CarteiraInvestimento.Domain.csproj.CoreCompileInputs.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\CarteiraInvestimento.Domain.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\refint\CarteiraInvestimento.Domain.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\CarteiraInvestimento.Domain.pdb
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Domain\obj\Debug\net8.0\ref\CarteiraInvestimento.Domain.dll

@@ -1,0 +1,15 @@
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\bin\Debug\net8.0\CarteiraInvestimento.Infrastructure.deps.json
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\bin\Debug\net8.0\CarteiraInvestimento.Infrastructure.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\bin\Debug\net8.0\CarteiraInvestimento.Infrastructure.pdb
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\bin\Debug\net8.0\CarteiraInvestimento.Domain.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\bin\Debug\net8.0\CarteiraInvestimento.Domain.pdb
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\CarteiraInvestimento.Infrastructure.csproj.AssemblyReference.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\CarteiraInvestimento.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\CarteiraInvestimento.Infrastructure.AssemblyInfoInputs.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\CarteiraInvestimento.Infrastructure.AssemblyInfo.cs
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\CarteiraInvestimento.Infrastructure.csproj.CoreCompileInputs.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\Carteira.34593B5F.Up2Date
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\CarteiraInvestimento.Infrastructure.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\refint\CarteiraInvestimento.Infrastructure.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\CarteiraInvestimento.Infrastructure.pdb
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Data\obj\Debug\net8.0\ref\CarteiraInvestimento.Infrastructure.dll

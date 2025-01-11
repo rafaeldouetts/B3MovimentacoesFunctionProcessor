@@ -1,0 +1,15 @@
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\bin\Debug\net8.0\CarteiraInvestimento.Application.deps.json
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\bin\Debug\net8.0\CarteiraInvestimento.Application.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\bin\Debug\net8.0\CarteiraInvestimento.Application.pdb
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\CarteiraInvestimento.Application.csproj.AssemblyReference.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\CarteiraInvestimento.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\CarteiraInvestimento.Application.AssemblyInfoInputs.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\CarteiraInvestimento.Application.AssemblyInfo.cs
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\CarteiraInvestimento.Application.csproj.CoreCompileInputs.cache
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\CarteiraInvestimento.Application.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\refint\CarteiraInvestimento.Application.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\CarteiraInvestimento.Application.pdb
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\ref\CarteiraInvestimento.Application.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\bin\Debug\net8.0\CarteiraInvestimento.Domain.dll
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\bin\Debug\net8.0\CarteiraInvestimento.Domain.pdb
+G:\Projetos\function\CarteiraInvestimento\CarteiraInvestimento.Application\obj\Debug\net8.0\Carteira.BDAE61CB.Up2Date
