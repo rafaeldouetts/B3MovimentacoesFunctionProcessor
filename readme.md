@@ -1,5 +1,5 @@
 
-# Arquitetura de solução
+# <span style="color:#a2c8f4">Arquitetura de solução</span>
 ![alt text](image.png)
 
 ### Recepção do Arquivo Excel:
@@ -17,8 +17,7 @@ Após o processamento, o arquivo original é movido para um Blob de Arquivo Arqu
 ### Resumo das Movimentações:
 Quando o arquivo é movido para o Blob de Arquivo Arquivado, outra função é disparada. Essa função acessa a base de dados, recupera todas as movimentações já registradas e calcula o resumo, como o saldo de ações e o valor investido, consolidando as informações para análise.
 
-
-# Estratégia de Armazenamento com Azure Blob Storage
+# <span style="color:#a2c8f4">Estratégia de Armazenamento com Azure Blob Storage</span>
 
 Este projeto utiliza o **Azure Blob Storage** para armazenar arquivos, e implementamos uma estratégia para otimizar os custos de armazenamento usando diferentes níveis de acesso (tiers) oferecidos pelo Azure.
 
@@ -47,8 +46,8 @@ A estratégia de armazenamento no Azure Blob Storage segue um fluxo que começa 
 
 No momento em que o arquivo é enviado ao **Azure Blob Storage**, ele é inicialmente colocado na camada **Hot**. Após o processamento, o **tier de acesso** pode ser alterado para a camada **Archive** usando o método:
 
+# <span style="color:#a2c8f4">Arquitetura de Projeto</span>
 ```csharp
-# Arquitetura de Projeto:
 
 /CarteiraInvestimento
 |-- /src
@@ -119,8 +118,7 @@ A separação entre serviços e repositórios no seu projeto oferece diversas va
 - **Manutenção Simples**: A estrutura bem definida permite identificar rapidamente problemas e aplicar correções de forma eficiente.
 
 
-# Como Iniciar o Projeto
-
+# <span style="color:#a2c8f4">Como Iniciar o Projeto</span>
 ### Requisitos
 
 Para rodar o projeto, é necessário ter as seguintes dependências instaladas:
@@ -184,8 +182,8 @@ Este endpoint é utilizado para realizar o upload de um arquivo. Ele recebe um a
 
 A requisição deve ser do tipo `POST` e enviar um arquivo como parte de um formulário `multipart/form-data`. O arquivo deve ser enviado com o campo nomeado `file`.
 
+# <span style="color:#a2c8f4">Como o Azurite Ajuda no Desenvolvimento Local e Testes</span>
 
-# Como o Azurite Ajuda no Desenvolvimento Local e Testes
 1. ### Desenvolvimento Local Sem Conexão com a Nuvem:
 O Azurite permite que os desenvolvedores emulem os serviços de armazenamento do Azure no ambiente local, evitando a necessidade de interagir com o Azure real durante a fase de desenvolvimento. Isso acelera o ciclo de desenvolvimento, pois você pode testar suas interações com o Blob Storage e outros serviços diretamente no seu computador.
 
