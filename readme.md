@@ -18,7 +18,7 @@ Após o processamento, o arquivo original é movido para um Blob de Arquivo Arqu
 Quando o arquivo é movido para o Blob de Arquivo Arquivado, outra função é disparada. Essa função acessa a base de dados, recupera todas as movimentações já registradas e calcula o resumo, como o saldo de ações e o valor investido, consolidando as informações para análise.
 
 
-# arquiteura de projeto
+# Arquitetura de Projeto:
 ![alt text](image-1.png)
 <!-- /CarteiraInvestimento
 |-- /src
@@ -79,7 +79,7 @@ Quando o arquivo é movido para o Blob de Arquivo Arquivado, outra função é d
 |   |-- /DomainTests
 |   |-- /InfrastructureTests -->
 
-### Vantagens da Arquitetura Adotada
+### Vantagens da Arquitetura Adotada:
 A separação entre serviços e repositórios no seu projeto oferece diversas vantagens importantes:
 
 - **Desacoplamento**: A lógica de negócios e a persistência de dados são isoladas, permitindo que mudanças em uma parte não afetem a outra.
@@ -88,11 +88,26 @@ A separação entre serviços e repositórios no seu projeto oferece diversas va
 - **Manutenção Simples**: A estrutura bem definida permite identificar rapidamente problemas e aplicar correções de forma eficiente.
 
 
-# Iniciar o Projeto
+# Como Iniciar o Projeto
 
 ### Requisitos
 
-Para rodar o projeto, é necessário ter o **Docker Desktop** instalado. Caso não tenha, você pode baixá-lo [aqui](https://www.docker.com/products/docker-desktop/).
+Para rodar o projeto, é necessário ter as seguintes dependências instaladas:
+
+1. **Docker Desktop**  
+   O projeto utiliza containers Docker para emular o ambiente de produção. Caso não tenha o Docker Desktop instalado, você pode baixá-lo [aqui](https://www.docker.com/products/docker-desktop/).
+
+2. **.NET 8 SDK**  
+   O projeto foi desenvolvido utilizando o **.NET 8 SDK**. Certifique-se de ter o SDK do .NET 8 instalado em sua máquina. Você pode baixá-lo [aqui](https://dotnet.microsoft.com/download/dotnet/8.0).
+
+### Dependências Opcionais
+
+3. **Azure Data Explorer**  
+   Se você deseja integrar ou explorar dados no Azure Data Explorer, é recomendado instalar o **Azure Data Explorer**. Mais informações podem ser encontradas [aqui](https://learn.microsoft.com/en-us/azure/data-explorer/).
+   
+
+4. **SQL Server Management Studio (SQL Management Studio)**  
+   Para facilitar a administração e gerenciamento do banco de dados SQL Server, você pode instalar o **SQL Server Management Studio (SSMS)**. Ele fornece uma interface gráfica rica para gerenciar o banco de dados. Baixe o SSMS [aqui](https://aka.ms/ssmsfullsetup).
 
 ### Passos para Execução
 
@@ -140,10 +155,21 @@ Azurite é altamente compatível com as bibliotecas e SDKs do Azure, como o Azur
 Azurite pode ser facilmente configurado via Docker ou utilizando pacotes locais, permitindo uma emulação rápida e prática. Ao usar comandos simples, como docker-compose up, você pode levantar uma instância local do Azurite e começar a testar suas operações de armazenamento sem complicações.
 
 
+# Azure Storage Explorer
+![alt text](image-3.png)
+
+O Azure Storage Explorer é uma ferramenta gratuita e fácil de usar da Microsoft que permite gerenciar recursos de armazenamento no Azure. Com ele, você pode acessar e interagir com contas de armazenamento, como Blob Storage, File Storage, Queue Storage e Table Storage, de maneira simples. A ferramenta permite realizar operações como upload, download, visualização e exclusão de arquivos, além de facilitar a administração de dados no Azure de forma visual e intuitiva, tanto localmente quanto em ambientes remotos.
+
+você pode baixá-lo [aqui](https://azure.microsoft.com/en-us/products/storage/storage-explorer/#Download-4).
+
 # como logar no banco de dados 
-    nome do servidor: localhost,1433
-    usuario: sa 
-    senha: P@55w0rd
+Para acessar o banco de dados, use as seguintes informações de conexão:
+
+- **Nome do Servidor**: `localhost,1433`
+- **Usuário**: `sa`
+- **Senha**: `P@55w0rd`
+
+Certifique-se de que o container SQL Server esteja em execução e que a porta `1433` esteja liberada para conexões.
 
 # EPPlus
 O EPPlus é uma biblioteca popular para trabalhar com arquivos Excel (XLSX) no .NET. Ela permite a leitura, criação e manipulação de planilhas do Excel de maneira eficiente e sem a necessidade de ter o Excel instalado na máquina. Com o EPPlus, você pode:
