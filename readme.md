@@ -96,18 +96,31 @@ Para rodar o projeto, é necessário ter as seguintes dependências instaladas:
 
 1. **Docker Desktop**  
    O projeto utiliza containers Docker para emular o ambiente de produção. Caso não tenha o Docker Desktop instalado, você pode baixá-lo [aqui](https://www.docker.com/products/docker-desktop/).
-
+![alt text](image-6.png)
 2. **.NET 8 SDK**  
    O projeto foi desenvolvido utilizando o **.NET 8 SDK**. Certifique-se de ter o SDK do .NET 8 instalado em sua máquina. Você pode baixá-lo [aqui](https://dotnet.microsoft.com/download/dotnet/8.0).
 
 ### Dependências Opcionais
 
 3. **Azure Data Explorer**  
-   Se você deseja integrar ou explorar dados no Azure Data Explorer, é recomendado instalar o **Azure Data Explorer**. Mais informações podem ser encontradas [aqui](https://learn.microsoft.com/en-us/azure/data-explorer/).
-   
+   O Azure Storage Explorer é uma ferramenta gratuita e fácil de usar da Microsoft que permite gerenciar recursos de armazenamento no Azure. Com ele, você pode acessar e interagir com contas de armazenamento, como Blob Storage, File Storage, Queue Storage e Table Storage, de maneira simples. A ferramenta permite realizar operações como upload, download, visualização e exclusão de arquivos, além de facilitar a administração de dados no Azure de forma visual e intuitiva, tanto localmente quanto em ambientes remotos. Baixe o Azure Data Explorer [aqui](https://azure.microsoft.com/en-us/products/storage/storage-explorer/#Download-4).
+
+   ![alt text](image-3.png)
+
 
 4. **SQL Server Management Studio (SQL Management Studio)**  
-   Para facilitar a administração e gerenciamento do banco de dados SQL Server, você pode instalar o **SQL Server Management Studio (SSMS)**. Ele fornece uma interface gráfica rica para gerenciar o banco de dados. Baixe o SSMS [aqui](https://aka.ms/ssmsfullsetup).
+   Para facilitar a administração e gerenciamento do banco de dados SQL Server, você pode instalar o **SQL Server Management Studio (SSMS)**. Ele fornece uma interface gráfica rica para gerenciar o banco de dados. Baixe o SSMS [aqui](https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16).
+   ![alt text](image-4.png)
+
+5. **Postman**  
+   O **Postman** é uma ferramenta útil para testar APIs. Se você deseja testar os endpoints da aplicação de forma visual e interativa, pode usar o **Postman**. Baixe o Postman [aqui](https://www.postman.com/downloads/).
+
+   ![alt text](image-5.png)
+
+ **Alternativa**: Caso não queira usar o Postman, você também pode testar os endpoints utilizando o comando **CURL** diretamente no terminal. Aqui está um exemplo de como enviar um arquivo via CURL:
+ ```
+C:\Windows\System32\curl.exe -X POST "http://localhost:7184/api/Upload" -F  "file=@C:seu-diretorio\seu-arquivo.xlsx"
+```
 
 ### Passos para Execução
 
@@ -118,8 +131,8 @@ Para rodar o projeto, é necessário ter as seguintes dependências instaladas:
 
 2. **Rodar a aplicacao**  
    ```
+   cd CarteiraInvestimento
    dotnet run 
-
 
 # Documentação do Endpoint
 
@@ -154,13 +167,6 @@ Azurite é altamente compatível com as bibliotecas e SDKs do Azure, como o Azur
 4. ### Facilidade de Configuração e Execução:
 Azurite pode ser facilmente configurado via Docker ou utilizando pacotes locais, permitindo uma emulação rápida e prática. Ao usar comandos simples, como docker-compose up, você pode levantar uma instância local do Azurite e começar a testar suas operações de armazenamento sem complicações.
 
-
-# Azure Storage Explorer
-![alt text](image-3.png)
-
-O Azure Storage Explorer é uma ferramenta gratuita e fácil de usar da Microsoft que permite gerenciar recursos de armazenamento no Azure. Com ele, você pode acessar e interagir com contas de armazenamento, como Blob Storage, File Storage, Queue Storage e Table Storage, de maneira simples. A ferramenta permite realizar operações como upload, download, visualização e exclusão de arquivos, além de facilitar a administração de dados no Azure de forma visual e intuitiva, tanto localmente quanto em ambientes remotos.
-
-você pode baixá-lo [aqui](https://azure.microsoft.com/en-us/products/storage/storage-explorer/#Download-4).
 
 # como logar no banco de dados 
 Para acessar o banco de dados, use as seguintes informações de conexão:
