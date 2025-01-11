@@ -18,8 +18,38 @@ Após o processamento, o arquivo original é movido para um Blob de Arquivo Arqu
 Quando o arquivo é movido para o Blob de Arquivo Arquivado, outra função é disparada. Essa função acessa a base de dados, recupera todas as movimentações já registradas e calcula o resumo, como o saldo de ações e o valor investido, consolidando as informações para análise.
 
 
+# Estratégia de Armazenamento com Azure Blob Storage
+
+Este projeto utiliza o **Azure Blob Storage** para armazenar arquivos, e implementamos uma estratégia para otimizar os custos de armazenamento usando diferentes níveis de acesso (tiers) oferecidos pelo Azure.
+
+## Fluxo de Armazenamento: Camadas de Acesso
+
+A estratégia de armazenamento no Azure Blob Storage segue um fluxo que começa com o armazenamento do arquivo na camada **Hot** e, após o processamento, move o arquivo para a camada **Archive**. Este fluxo foi projetado para otimizar os custos de armazenamento, enquanto garante acesso eficiente durante a etapa de processamento.
+
+### Camada de Acesso "Hot" e "Archive"
+
+1. **Camada Hot (Inicial)**:
+   - Quando um arquivo é enviado para o Azure Blob Storage, ele é inicialmente armazenado na camada **Hot**. A camada **Hot** é ideal para dados que são frequentemente acessados ou precisam ser processados imediatamente após o upload. Nesse estágio, o arquivo estará disponível para leitura e processamento sem qualquer latência significativa.
+   
+2. **Processamento do Arquivo**:
+   - Assim que o arquivo é carregado na camada **Hot**, a aplicação começa a processá-lo, realizando operações como leitura, transformação de dados, e gravação no banco de dados. Durante essa fase, o arquivo precisa estar em um local onde possa ser acessado rapidamente, por isso, ele permanece na camada **Hot**.
+   
+3. **Camada Archive (Após Processamento)**:
+   - Depois que o processamento do arquivo é concluído e os dados são extraídos ou transformados conforme necessário, o arquivo é movido para a camada **Archive**. A camada **Archive** é usada para dados que são raramente acessados e oferece um custo de armazenamento significativamente mais baixo. Isso ajuda a reduzir os custos de armazenamento de dados históricos ou processados que não precisam ser acessados com frequência, mas ainda precisam ser mantidos de forma segura no Azure Blob Storage.
+
+### O que é a camada "Archive"?
+
+- **Archive**: A camada de acesso Archive é ideal para dados que têm acesso esporádico e não são frequentemente utilizados. O custo de armazenamento é significativamente mais baixo, mas o acesso aos dados leva mais tempo em comparação com as camadas **Hot** e **Cool**.
+- **Quando usar**: Utilizamos a camada Archive para armazenar dados históricos ou backup de arquivos que não necessitam de acesso rápido, mas ainda precisam ser mantidos de forma durável e segura.
+- **Vantagens**: A principal vantagem da camada Archive é o custo reduzido de armazenamento. Isso a torna uma ótima escolha para dados de longo prazo, que são mantidos no sistema apenas para conformidade, auditoria ou outros fins similares.
+
+### Como a camada "Archive" é configurada?
+
+No momento em que o arquivo é enviado ao **Azure Blob Storage**, ele é inicialmente colocado na camada **Hot**. Após o processamento, o **tier de acesso** pode ser alterado para a camada **Archive** usando o método:
+
+```csharp
 # Arquitetura de Projeto:
-![alt text](image-1.png)
+
 <!-- /CarteiraInvestimento
 |-- /src
 |   |-- /Functions (Projeto de Azure Functions)
@@ -78,6 +108,7 @@ Quando o arquivo é movido para o Blob de Arquivo Arquivado, outra função é d
 |   |-- /ApplicationTests
 |   |-- /DomainTests
 |   |-- /InfrastructureTests -->
+```
 
 ### Vantagens da Arquitetura Adotada:
 A separação entre serviços e repositórios no seu projeto oferece diversas vantagens importantes:
