@@ -50,7 +50,7 @@ No momento em que o arquivo é enviado ao **Azure Blob Storage**, ele é inicial
 ```csharp
 # Arquitetura de Projeto:
 
-<!-- /CarteiraInvestimento
+/CarteiraInvestimento
 |-- /src
 |   |-- /Functions (Projeto de Azure Functions)
 |   |   |-- FechamentoFunction.cs
@@ -107,7 +107,7 @@ No momento em que o arquivo é enviado ao **Azure Blob Storage**, ele é inicial
 |-- /tests (Projeto de Testes)
 |   |-- /ApplicationTests
 |   |-- /DomainTests
-|   |-- /InfrastructureTests -->
+|   |-- /InfrastructureTests
 ```
 
 ### Vantagens da Arquitetura Adotada:
