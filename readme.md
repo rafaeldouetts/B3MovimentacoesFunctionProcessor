@@ -19,7 +19,8 @@ Quando o arquivo é movido para o Blob de Arquivo Arquivado, outra função é d
 
 
 # arquiteura de projeto
-/CarteiraInvestimento
+![alt text](image-1.png)
+<!-- /CarteiraInvestimento
 |-- /src
 |   |-- /Functions (Projeto de Azure Functions)
 |   |   |-- FechamentoFunction.cs
@@ -76,7 +77,7 @@ Quando o arquivo é movido para o Blob de Arquivo Arquivado, outra função é d
 |-- /tests (Projeto de Testes)
 |   |-- /ApplicationTests
 |   |-- /DomainTests
-|   |-- /InfrastructureTests
+|   |-- /InfrastructureTests -->
 
 ### Vantagens da Arquitetura Adotada
 A separação entre serviços e repositórios no seu projeto oferece diversas vantagens importantes:
